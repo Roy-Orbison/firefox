@@ -618,6 +618,15 @@ main section {
   font-size: var(--font-size-small);
   color: var(--newtab-contextual-text-primary-color);
 }
+@media (hover: hover) {
+  .wallpaper-attribution {
+    opacity: 0.6;
+    transition: opacity 150ms;
+  }
+  .wallpaper-attribution:hover, .wallpaper-attribution:focus-within {
+    opacity: 1;
+  }
+}
 @media (min-width: 866px) {
   .no-search .no-sections .wallpaper-attribution, .only-search .wallpaper-attribution, .only-topsites .wallpaper-attribution {
     position: absolute;
@@ -2050,6 +2059,15 @@ main section {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+}
+@media (hover: hover) {
+  .personalize-button > div {
+    opacity: 0.6;
+    transition: opacity 150ms;
+  }
+  .personalize-button:hover > div, .personalize-button:focus > div {
+    opacity: 1;
+  }
 }
 .personalize-button > div > img {
   -moz-context-properties: fill;
